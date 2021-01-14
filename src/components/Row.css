@@ -1,0 +1,37 @@
+.row {
+  margin-left: 20px;
+  color: white;
+}
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: auto;
+  padding: 20px;
+}
+/* hide scrollbar for Chrome, Safari and Opera */
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+/* hide scrollbar for IE, Edge and Firefox */
+.row__posters {
+  -ms-overflow-style: none; /*IE and Edge*/
+  scrollbar-width: none; /* Firefox*/
+}
+.row__poster {
+  width: 100%;
+  object-fit: contain;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 0.45s;
+  cursor: pointer;
+}
+.row__poster:hover {
+  transform: scale(1.08);
+}
+.row__posterLarge {
+  max-height: 250px;
+}
+.row__posterLarge:hover {
+  transform: scale(1.09);
+}

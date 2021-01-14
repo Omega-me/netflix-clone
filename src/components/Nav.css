@@ -1,0 +1,21 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  z-index: 1;
+}
+.nav__show {
+  background-color: #111;
+  transition: all 0.25s ease-in;
+}
+.nav__logo {
+  width: 100px;
+}
+.nav__user {
+  width: 35px;
+}
+/* 
+if we have a png or a jpeg ore other type of img to save the aspect ratio we use object-fit:contained;
+but in this example we are using svg image */
